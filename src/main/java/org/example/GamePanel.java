@@ -48,7 +48,7 @@ public class GamePanel extends JPanel implements Runnable {
      * Updates everything and makes all the values change
      */
     private void update() {
-        double speed = 0.05;
+        double speed = 0.02;
 
         if (Game.keyHandler.wPressed) {
             Game.camera.move(0, speed, 0);
@@ -78,7 +78,7 @@ public class GamePanel extends JPanel implements Runnable {
 
         Matrix origin = new Matrix(new double[][]{{2}, {0}, {0}});
 
-        double angle = 360;
+        double angle = 1;
 
         Main.point1.position = Main.point1.position.rotateX3(angle, origin);
         Main.point2.position = Main.point2.position.rotateX3(angle, origin);
