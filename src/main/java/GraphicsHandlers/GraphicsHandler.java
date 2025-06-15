@@ -72,7 +72,7 @@ public class GraphicsHandler {
         }
 
         // Perspective projection
-        double scale = 250; // adjust this to zoom in/out
+        double scale = 400; // adjust this to zoom in/out
         posX = (int) ((rotated.info[0][0] / rotated.info[1][0]) * scale + 250);
         posY = (int) ((rotated.info[2][0] / rotated.info[1][0]) * scale + 250);
 

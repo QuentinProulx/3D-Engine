@@ -63,15 +63,15 @@ public class GamePanel extends JPanel implements Runnable {
             Game.camera.move(speed, 0, 0);
         }
 
-//        if (Game.keyHandler.iPressed) {
-//            Game.camera.rotateY(1, Game.camera.position);
-//        }
+        if (Game.keyHandler.iPressed) {
+            Game.camera.rotateX(1, Game.camera.position);
+        }
         if (Game.keyHandler.jPressed) {
             Game.camera.rotateZ(-1.2, Game.camera.position);
         }
-//        if (Game.keyHandler.kPressed) {
-//            Game.camera.rotateY(-1, Game.camera.position);
-//        }
+        if (Game.keyHandler.kPressed) {
+            Game.camera.rotateX(-1, Game.camera.position);
+        }
         if (Game.keyHandler.lPressed) {
             Game.camera.rotateZ(1.3, Game.camera.position);
         }
