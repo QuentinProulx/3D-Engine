@@ -17,7 +17,7 @@ public class Game {
      */
     public static void start() {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setTitle("3D Fucking Engine");
+        frame.setTitle("3D Engine");
         frame.setSize(516, 539);
         frame.setLocationRelativeTo(null);
         frame.setResizable(false);

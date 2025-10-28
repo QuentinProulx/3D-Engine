@@ -48,7 +48,7 @@ public class GamePanel extends JPanel implements Runnable {
      * Updates everything and makes all the values change
      */
     private void update() {
-        double speed = 0.02;
+        double speed = 0.03;
 
         if (Game.keyHandler.wPressed) {
             Game.camera.move(0, speed, 0);
@@ -64,16 +64,16 @@ public class GamePanel extends JPanel implements Runnable {
         }
 
         if (Game.keyHandler.iPressed) {
-            Game.camera.rotateX(1, Game.camera.position);
+            //Game.camera.rotateX(1, Game.camera.position);
         }
         if (Game.keyHandler.jPressed) {
-            Game.camera.rotateZ(-1.2, Game.camera.position);
+            Game.camera.rotateZ(-1, Game.camera.position);
         }
         if (Game.keyHandler.kPressed) {
-            Game.camera.rotateX(-1, Game.camera.position);
+            //Game.camera.rotateX(-1, Game.camera.position);
         }
         if (Game.keyHandler.lPressed) {
-            Game.camera.rotateZ(1.3, Game.camera.position);
+            Game.camera.rotateZ(1, Game.camera.position);
         }
 
         Matrix origin = new Matrix(new double[][]{{2}, {0}, {0}});

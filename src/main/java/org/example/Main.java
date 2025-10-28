@@ -8,8 +8,6 @@ import ExtraMath.Matrix;
 public class Main {
     static double distance = 1;
 
-
-
     public static Point point1 = new Point(-distance, -0.5, 0.5, 0, 0, 0);
     public static Point point2 = new Point(-distance, -0.5, -0.5, 0, 0, 0);
     public static Line line1 = new Line(point1, point2);
